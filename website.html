@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>https://SScarrentals.com</title>
+    
+    <link rel="stylesheet" href="mystylewebsite.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="jeep.jpg"></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#ride">RIDE</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#reviews">REVIEWS</a></li>
+        </ul>
+        <div class="header-btn">
+            <style>
+                body {font-family: Arial, Helvetica, sans-serif;}
+                
+                /* Full-width input fields */
+                input[type=text], input[type=password] {
+                  width: 100%;
+                  padding: 12px 20px;
+                  margin: 8px 0;
+                  display: inline-block;
+                  border: 1px solid #ccc;
+                  box-sizing: border-box;
+                }
+                
+                /* Set a style for all buttons */
+                 button {
+                  background-color: #283126;
+                  color: white;
+                  padding: 12px 28px;
+                  margin: 8px 0;
+                  border: none;
+                  cursor: pointer;
+                  width: 100%;
+                  border-radius: 0.9rem;
+                  
+                }
+                
+                 .b1 button:hover {
+                  opacity: 0.8;
+                }
+                
+                /* Extra styles for the cancel button */
+                .cancelbtn {
+                  width: auto;
+                  padding: 10px 18px;
+                  background-color: #f44336;
+                }
+                
+                /* Center the image and position the close button */
+                .imgcontainer {
+                  text-align: center;
+                  margin: 24px 0 12px 0;
+                  position: relative;
+                }
+                
+                img.avatar {
+                  width: 10%;
+                  border-radius: 50%;
+                }
+                
+                .container {
+                  padding: 16px;
+                }
+                
+                span.psw {
+                  float: right;
+                  padding-top: 16px;
+                }
+                
+                /* The Modal (background) */
+                .modal {
+                  display: none; /* Hidden by default */
+                  position: fixed; /* Stay in place */
+                  z-index: 1; /* Sit on top */
+                  left: 0;
+                  top: 0;
+                  width: 100%; /* Full width */
+                  height: 100%; /* Full height */
+                  overflow: auto; /* Enable scroll if needed */
+                  background-color: rgb(0,0,0); /* Fallback color */
+                  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                  padding-top: 60px;
+                }
+                
+                /* Modal Content/Box */
+                .modal-content {
+                  background-color: #fefefe;
+                  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+                  border: 1px solid #888;
+                  width: 80%; /* Could be more or less, depending on screen size */
+                }
+                
+                /* The Close Button (x) */
+                .close {
+                  position: absolute;
+                  right: 25px;
+                  top: 0;
+                  color: #f4e5e5;
+                  font-size: 35px;
+                  font-weight: bold;
+                }
+                
+                .close:hover,
+                .close:focus {
+                  color: red;
+                  cursor: pointer;
+                }
+                
+                /* Add Zoom Animation */
+                .animate {
+                  -webkit-animation: animatezoom 0.6s;
+                  animation: animatezoom 0.6s
+                }
+                
+                @-webkit-keyframes animatezoom {
+                  from {-webkit-transform: scale(0)} 
+                  to {-webkit-transform: scale(1)}
+                }
+                  
+                @keyframes animatezoom {
+                  from {transform: scale(0)} 
+                  to {transform: scale(1)}
+                }
+                
+                /* Change styles for span and cancel button on extra small screens */
+                @media screen and (max-width: 300px) {
+                  span.psw {
+                     display: block;
+                     float: none;
+                  }
+                  .cancelbtn {
+                     width: 100%;
+                  }
+                }
+                </style>
+                </head>
+                <body>
+                
+                
+                
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+                
+                <div id="id01" class="modal">
+                  
+                  <form class="modal-content animate" action="website.html" method="post">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img src="login.jpg" alt="Avatar" class="avatar">
+                    </div>
+                
+                    <div class="container">
+                      <label for="uname"><b>Username</b></label>
+                      <input type="text" placeholder="Enter Username" name="uname" required>
+                
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+                        <script>
+                            function myFunction1() {
+                                alert("your logged-in successfully")
+                            }
+                        </script>
+                  <div class="b1" >  <button onclick="myFunction1()" type="submit"><a href="services.html">Login</button></div>
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                      </label>
+                    </div>
+                
+                    <div class="container" style="background-color:#f1f1f1">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                      <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                  </form>
+                </div>
+                
+                <script>
+                // Get the modal
+                var modal = document.getElementById('id01');
+                
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+                </script>
+            
+            <a href="signin.html" class="sign-in">sign up</a>
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div class="text">
+            <h1><span>Looking</span> to <br>rent a car</h1>
+            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</P>
+            <div class="app-stores">
+        <img src="apay.jpg" alt="">
+                <img src="gpay.jpg" alt="">
+            </div>
+        </div>
+        <div class="form-container">
+            <form action="services.html">
+                <div class="input-box">
+                    <span>Location</span>
+                    <input type="search" name="" id="" placeholder="search palces" required>
+                   
+                </div>
+                <div class="input-box">
+                    <span>Pick-Up Date</span>
+                    <input type="date" name="" id="" required>
+                </div>
+                <div class="input-box">
+                    <span>Return Date</span>
+                    <input type="date" name="" id="" required>
+                </div>
+                <script>
+                    function myFunction() {
+                        alert("please login or sign-up")
+                    }
+                </script>
+            <button onclick="myFunction()" class="btn">Check</button>
+            </form>
+        </div>
+    </section>
+    <section class="ride" id="ride">
+        <div class="heading">
+            <span>How Its Work</span>
+            <h1>Rent with 3 Easy Steps</h1>
+        </div>
+        <div class="ride-container">
+            <div class="box">
+                <i class="bx bxs-map"></i>
+                <h2>Choose A Location</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, incidunt sequi aliquam magni exercitationem quo porro. Odio, repellat! </p>
+
+            </div>
+            <div class="box">
+                <i class='bx bxs-calendar-check'></i>
+                <h2>pick-Up Date</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, incidunt sequi aliquam magni exercitationem quo porro. Odio, repellat!</p>
+                
+            </div>
+            <div class="box">
+                <i class='bx bxs-calendar-star'></i>
+                <h2>Book A Car</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, incidunt sequi aliquam magni exercitationem quo porro. Odio, repellat!</p>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="heading">
+            <span>Best Services</span>
+            <h1>Explore Out Top Deals <br> From Top Rated Dealers</h1>
+        </div>
+        <div class="services-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="car1.jpg" alt="">
+                </div>
+                <p>2018</p>
+                <h3>HONDA AMAZE E i-DTEC</h3>
+                
+                <a href="#" class="btn">Rent Now</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="car2.jpg" alt="">
+                </div>
+                <p>2022</p>
+                <h3>SUZUKI FRONX SUV</h3>
+                
+                <a href="#" class="btn">Rent Now</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="car5.jpg" alt="">
+                </div>
+                <p>2016</p>
+                <h3>MARUTHI SUZUKI Ciaz</h3>
+                
+                <a href="#" class="btn">Rent Now</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="car3.jpg" alt="">
+                </div>
+                <p>2023</p>
+                <h3>MARUTHI SUZUKI JIMNY</h3>
+               
+                <a href="#" class="btn">Rent Now</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="car7.jpg" alt="">
+                </div>
+                <p>2024</p>
+                <h3>TATA CURVV</h3>
+               
+                <a href="#" class="btn">Rent Now</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="car8.jpg" alt="">
+                </div>
+                <p>2019</p>
+                <h3>TOYOTA GLANZA</h3>
+              
+                <a href="#" class="btn">Rent Now</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="car9.jpg" alt="">
+                </div>
+                <p>2020</p>
+                <h3>HYUNDAI CRETA</h3>
+                
+                <a href="#" class="btn">Rent Now</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="car10.jpg" alt="">
+                </div>
+                <p>2018</p>
+                <h3>SUZUKI ERTIGA</h3>
+
+                <a href="#" class="btn">Rent Now</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="car11.jpg" alt="">
+                </div>
+                <p>2024</p>
+                <h3>KIA SELTOS</h3>
+               
+                <a href="#" class="btn">Rent Now</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="car12.jpg" alt="">
+                </div>
+                <p>2023</p>
+                <h3>KIA SONET</h3>
+               
+                <a href="#" class="btn">Rent Now</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="car13.jpg" alt="">
+                </div>
+                <p>2018</p>
+                <h3>VOLSWAGEN POLO</h3>
+                
+                <a href="#" class="btn">Rent Now</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="car14.jpg" alt="">
+                </div>
+                <p>2022</p>
+                <h3>TOYOTA Urban Crusier Taisor</h3>
+                
+                <a href="#" class="btn">Rent Now</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="car17.jpg" alt="">
+                </div>
+                <p>2023</p>
+                <h3>KIA CARNIVAL</h3>
+               
+                <a href="#" class="btn">Rent Now</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="car15.jpg" alt="">
+                </div>
+                <p>2019</p>
+                <h3>SUZUKI S-presso</h3>
+               
+                <a href="#" class="btn">Rent Now</a>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="car16.jpg" alt="">
+                </div>
+                <p>2023</p>
+                <h3>MAHINDRA THAR</h3>
+                
+                <a href="#" class="btn">Rent Now</a>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="heading">
+            <span>Best Services</span>
+            <h1>Best Customer Experience</h1>
+        </div>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="car4.jpg" alt="">
+            </div>
+            <div class="about-text">
+                <span>About Us</span>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis deserunt, labore quae obcaecati consectetur dicta officiis laudantium blanditiis iure, sint illo deleniti unde provident libero aperiam necessitatibus aliquid eius</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis deserunt, labore quae obcaecati consectetur dicta officiis laudantium blanditiis iure, sint illo deleniti unde provident libero aperiam necessitatibus aliquid eius</p>
+                <a href="https://www.sscarrentalnagpur.com/about-us/" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <section class="reviews" id="reviews">
+        <div class="heading">
+            <span>Reviews</span>
+            <h1>What's Our Customer Say</h1>
+        </div>
+        <div class="reviews-container">
+            <div class="box">
+                <div class="rev-img">
+                    <img src="m1.jpg" alt="">
+                </div>
+                <h2><i>Mukesh Virmani</i></h2> 
+                <div class="stars">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+                <p>ITS a good choice. Magni atque nihil ut rem eveniet nulla cum omnis voluptas!!</p>
+            </div>
+                <div class="box">
+                    <div class="rev-img">
+                        <img src="m2.jpg" alt="">
+                    </div>
+                    <h2><i>Mukesh Virmani</i></h2> 
+                    <div class="stars">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                    </div>
+                    <p>Ya omnis voluptas odit nisi perspiciatis sint similique!!</p>
+                </div>
+                    <div class="box">
+                        <div class="rev-img">
+                            <img src="m3.jpg" alt="">
+                        </div>
+                        <h2><i>Mukesh Virmani</i></h2> 
+                        <div class="stars">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star-half' ></i>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.WOW!!excellent offers here!!</p>
+                    </div>
+                        <div class="box">
+                            <div class="rev-img">
+                                <img src="m4.jpg" alt="">
+                            </div>
+                            <h2><i>Mukesh Virmani</i></h2> 
+                            <div class="stars">
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                                <i class='bx bxs-star' ></i>
+                            </div>
+                            <p>Its a good choice. Magni atque nihil ut rem eveniet nulla cum omnis voluptas odit nisi perspiciatis sint similique!!</p>
+                        </div>
+                            <div class="box">
+                                <div class="rev-img">
+                                    <img src="m5.jpg" alt="">
+                                </div>
+                                <h2><i>Mukesh Virmani</i></h2> 
+                                <div class="stars">
+                                    <i class='bx bxs-star' ></i>
+                                    <i class='bx bxs-star' ></i>
+                                    <i class='bx bxs-star' ></i>
+                                    <i class='bx bxs-star' ></i>
+                                    <i class='bx bxs-star' ></i>
+                                </div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. I think its a good experience. </p>
+                            </div>
+                                <div class="box">
+                                    <div class="rev-img">
+                                        <img src="m6.jpg" alt="">
+                                    </div>
+                                    <h2><i>Bharghav Varma</i></h2> 
+                                    <div class="stars">
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bxs-star-half' ></i>
+                                    </div>
+        <p>Its a good experience car ride with ss rentals.i felt good and price also worth!!</p>
+                                </div>
+                                <div class="box">
+                                    <div class="rev-img">
+                                        <img src="m7.jpg" alt="">
+                                    </div>
+                                    <h2><i>Nithin Kumar</i></h2> 
+                                    <div class="stars">
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bxs-star-half' ></i>
+                                    </div>
+        <p>Excellent deals and offers here!. Magni atque nihil ut rem eveniet nulla cum omnis voluptas odit nisi perspiciatis sint similique!!</p>
+                                </div>
+                                <div class="box">
+                                    <div class="rev-img">
+                                        <img src="m8.jpg" alt="">
+                                    </div>
+                                    <h2><i>Mukesh Virmani</i></h2> 
+                                    <div class="stars">
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bxs-star-half' ></i>
+                                    </div>
+        <p>Better experience with ss rentals!.  voluptas odit nisi perspiciatis sint similique!!</p>
+                                </div>
+            </div>
+        </div>
+    </section>
+    <section class="newsletter">
+        <h2>Subscribe To Newsletter</h2>
+        <div class="box">
+            <input type="text" placeholder="Enter Your Email...">
+            <a href="https://sstravels.net/subscribe.php" class="btn">Subscribe</a>
+      
+        </div>
+    </section>
+    <div class="copyright">
+        <p>&#169; All Rights Are Reserved</p>
+        <div class="social">
+            <a href="https://wa.link/equpud"><i class='bx bxl-whatsapp' ></i></a>
+            <a href="https://www.facebook.com/share/zFj8vEL73xCTBfLV/"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://www.instagram.com/choudarii._.01?igsh=MWZoaTNyMzNoNTRzNQ=="><i class='bx bxl-instagram' ></i></a>
+        </div>
+    </div>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script src="myscript2.js"></script>
+</body>
+</html>

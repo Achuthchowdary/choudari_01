@@ -1,0 +1,118 @@
+.form-container {
+    text-align: center;
+    border-radius: 1em;
+    border: solid;
+border: double;
+margin-right: 20px;
+}
+form .f1{
+    display: inline;
+    align-items: center;
+    border: 2rem;
+    background-color: white;
+bottom: dotted;
+    
+}
+body{
+    
+    background-color: rgb(165, 71, 165);
+    width: 100%;
+    border-radius: 7rem;
+    background-image: url(bg1.jpg);
+    
+}
+form .f1 {
+    border-radius: 10rem;
+}
+form .f2 {
+    border-radius: 10rem;
+}
+form .an1 {
+    border-radius: 0.2rem;
+}
+form .an2 {
+    border-radius: 0.2rem;
+}
+button{
+    background-color: green;
+    border-radius: 2rem;
+    padding: 10px;
+
+}
+h2{
+    color: rgb(207, 27, 27);
+    padding: 0.1px;
+}
+.marquee{
+    padding: 2px;
+    color: aqua;
+}
+
+a{
+    color: #fff;
+
+}
+form .an{
+    background-color: white;
+    display: inline;
+    color: rgb(18, 9, 5);
+}
+form .an1{
+    background-color: white;
+    display: inline;
+    color: rgb(10, 4, 2);
+}
+form .an2{
+    background-color: white;
+    display: inline;
+    color: rgb(14, 13, 12);
+}
+form .an3{
+    background-color: white;
+    display: inline;
+    color: rgb(20, 8, 2);
+}
+form .f2{
+    background-color: white;
+    display: inline;
+
+}
+form .label {
+    color: rgb(25, 23, 22);
+}
+form .l1{
+    color: rgb(21, 17, 15);
+}
+form .l2{
+    color: rgb(23, 9, 3);
+}
+form .l3{
+    color: rgb(18, 7, 2);
+}
+form .l4{
+    color: rgb(25, 18, 13);
+}
+h3{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+strong{
+    color: rgb(255, 0, 0);
+}
+.radio {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: 520px;
+}
+input{
+    box-sizing: content-box;
+    padding: 5px;
+    background-color: rgb(232, 211, 211);
+    border-radius: 0.5rem;
+}
+p{
+    color: rgb(98, 25, 83);
+}
